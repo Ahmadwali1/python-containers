@@ -4,7 +4,7 @@
 # Print out the last student’s name.
 
 #Solution
-# students = ['Bob', 'Ahmad', 'james', 'Alex']
+students = ['Bob', 'Ahmad', 'james', 'Alex']
 # print(students[1])
 # print(students[-1])
 
@@ -13,7 +13,7 @@
 # Use a for loop to print out the string “[food goes here] is a good food”.
 
 #Solution 
-# foods = ('Burger', 'Pizza', 'Bread', 'taco')
+foods = ('Burger', 'Pizza', 'Bread', 'taco')
 # for food in foods:
 #   print(f"{food} is a good food")
 
@@ -31,11 +31,11 @@
 # “I was born in city, state - population of population”
 
 #Solution
-home_town = {
-  'city': 'Houston',
-  'state': 'Texas',
-  'population': '29.53 million' 
-}
+# home_town = {
+#   'city': 'Houston',
+#   'state': 'Texas',
+#   'population': '29.53 million' 
+# }
 # print(f"I was born in {home_town['city']}, {home_town['state']}-{home_town['population']}")
 
 #exercise 5
@@ -45,5 +45,23 @@ home_town = {
 # “population = 58000”
 
 #solution
-for key, value in home_town.items():
-  print(f"{key} = {value}")
+# for key, value in home_town.items():
+#   print(f"{key} = {value}")
+
+#exercise 6
+# Create an empty list named cohort.
+# Using a for loop to iterate over the students list.
+# Hint: Use the enumerate function to provide both the index & student
+
+# Within the for loop, add a dictionary to the cohort list that combines the student’s name and the food in the foods list at the same index
+
+#solution
+cohort = []
+for idx, student in enumerate(students):
+  student_data = {
+    'name': student,
+    'fav_food': foods[idx]
+  }
+  cohort.append(student_data)
+print(cohort)
+
