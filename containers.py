@@ -65,3 +65,14 @@ for idx, student in enumerate(students):
   cohort.append(student_data)
 print(cohort)
 
+
+#exercise 7
+# Using the list of students and a list comprehension, assign to a variable named awesome_students a new list containing strings similar to this:
+# ["Tina is awesome!", "Fred is awesome!", "Wilma is awesome!"]
+# Iterate over the awesome_students list, printing out each string
+
+#solution
+awesome_students = [student for student in students]
+for awesome_student in awesome_students:
+  print(f"{awesome_student} is awesome")
+
