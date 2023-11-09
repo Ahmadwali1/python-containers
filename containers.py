@@ -76,3 +76,12 @@ awesome_students = [student for student in students]
 for awesome_student in awesome_students:
   print(f"{awesome_student} is awesome")
 
+#exercise 8
+# Use a for loop to iterate over a list comprehension that filters the foods tuple to only include food strings that contains the letter a.
+# Within the for loop, print each food string.
+
+#solution
+a_foods = [food for food in foods if 'a' in food]
+for food in a_foods:
+  print(food)
+
