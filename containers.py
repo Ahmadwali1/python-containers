@@ -21,6 +21,19 @@
 #Using a for loop, print just the last two food strings from foods.
 
 #Solution
-foods = ('Burger', 'Pizza', 'Bread', 'taco')
-for food in foods[2:4]:
-  print(f"{food} is a good food")
+# foods = ('Burger', 'Pizza', 'Bread', 'taco')
+# for food in foods[2:4]:
+#   print(f"{food} is a good food")
+
+#Exercise 4
+# Create a dictionary named home_town containing the keys of city, state and population.
+# Print a string with this format:
+# “I was born in city, state - population of population”
+
+#Solution
+home_town = {
+  'city': 'Houston',
+  'state': 'Texas',
+  'population': '29.53 million' 
+}
+print(f"I was born in {home_town['city']}, {home_town['state']}-{home_town['population']}")
